@@ -16,11 +16,17 @@ ourRequest.onload = function(){
         else if(ourData.clans[i].name === "blackOrder") score3.textContent = ourData.clans[i].score;
         else if(ourData.clans[i].name === "theLeagueOfAssassins") score4.textContent = ourData.clans[i].score;
     }
+//     for(var i=0; i<ourData.events.length; i++){
+//         event_header.innerHTML += "<h1 class='event-head-js'>"+ ourData.events[i].header_name + "</h1>"
+//     }
+    
     for(var i=0; i<ourData.events.length; i++){
-        event_header.innerHTML += "<h1 class='event-head-js'>"+ ourData.events[i].header_name + "</h1>"
-    }
-    for(var i=0; i<ourData.events.length; i++){
-        totevent.innerHTML += "<a target=”_blank” href=" +ourData.events[i].link + ">" + ourData.events[i].name + "</a>"
+        var eventName = ""; 
+        for(k in ourData.events[i].name){ 
+            if(k=="_"){ eventName+=" "; }
+            else eventName+=k;
+        }
+        totevent.innerHTML += "<h1><a target=”_blank” href=" +ourData.events[i].link + ">" + eventName + "</a></h1>"
     }
 };
 
