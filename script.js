@@ -17,6 +17,7 @@ ourRequest.onload = function(){
     }
     for(var i=0; i<ourData.events.length; i++){
         totevent.innerHTML += "<a target=”_blank” href=" +ourData.events[i].link + ">" + <h2>ourData.events[i].name</h2> + "</a>"
+        console.log(ourData.events[i].name);
     }
 };
 
