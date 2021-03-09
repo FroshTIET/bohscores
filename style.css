@@ -196,3 +196,7 @@ a::after {
 .display-4 {
   font-weight: 900;
 }
+
+p {
+  white-space: pre;
+ }
