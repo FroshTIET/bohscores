@@ -23,8 +23,8 @@ ourRequest.onload = function(){
     for(var i=0; i<ourData.events.length; i++){
         var eventName = ""; 
         for(k in ourData.events[i].name){ 
-            if(k==="_"){ eventName+=" "; }
-            else eventName+=k;
+            if(ourData.events[i].name[k]==="_"){ eventName+=" "; }
+            else eventName+=ourData.events[i].name[k];
         }
         totevent.innerHTML += "<h1><a target=”_blank” href=" +ourData.events[i].link + ">" + eventName + "</a></h1>"
     }
