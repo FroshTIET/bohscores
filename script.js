@@ -16,7 +16,15 @@ ourRequest.onload = function(){
         else if(ourData.clans[i].name === "theLeagueOfAssassins") score4.textContent = ourData.clans[i].score;
     }
     for(var i=0; i<ourData.events.length; i++){
-        totevent.innerHTML += '<a target=”_blank” href=" +ourData.events[i].link + ">" + <h2>ourData.events[i].name</h2> + "</a>';
+        var eventname = "";
+        for(k in ourData.events[i].name){
+            if(k=="_"){
+               eventname+=" ";
+            }
+            eventname+=k;
+        }
+            
+        totevent.innerHTML += '<a target=”_blank” href=" +ourData.events[i].link + ">" + <h2>eventname</h2> + "</a>';
         console.log(ourData.events[i].name);
     }
 };
