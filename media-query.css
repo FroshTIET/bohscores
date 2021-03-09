@@ -17,5 +17,10 @@
     font-size: 3rem;
     width: 120px;
   }
+
+  .main-overlay {
+    position: fixed;
+    height: 100vh;
+  }
   /*Ends*/
 }

@@ -16,7 +16,7 @@ ourRequest.onload = function(){
         else if(ourData.clans[i].name === "theLeagueOfAssassins") score4.textContent = ourData.clans[i].score;
     }
     for(var i=0; i<ourData.events.length; i++){
-        totevent.innerHTML += "<a href=" +ourData.events[i].link + ">" + ourData.events[i].name + "</a>"
+        totevent.innerHTML += "<a target=”_blank” href=" +ourData.events[i].link + ">" + ourData.events[i].name + "</a>"
     }
 };
 
