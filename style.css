@@ -199,3 +199,8 @@ a::after {
 .display-4 {
   font-weight: 900;
 }
+
+.responsive{
+  width: 70%;
+  height: auto;
+}
