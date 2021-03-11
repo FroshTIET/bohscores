@@ -22,5 +22,10 @@
     position: fixed;
     height: 100vh;
   }
+  
+  .responsive{
+  width: 70%;
+  height: auto;
+}
   /*Ends*/
 }
